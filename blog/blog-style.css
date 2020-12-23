@@ -47,7 +47,7 @@ a {
 .mainMenu {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 222px;
+	margin-top: 147px;
 }
 
 .logo {
@@ -55,6 +55,7 @@ a {
 	font-family: 'Inconsolata', monospace;
 	text-transform: uppercase;
 	color: #000000;
+	letter-spacing: 6px;
 }
 
 .menu {
@@ -65,11 +66,15 @@ a {
 .menu li {
 	list-style-type: none;
 	display: inline-block;
-	padding-left: 120px;
+	padding-left: 90px;
 	font-size: 14px;
 	font-family: 'Playfair Display', serif;
 	text-transform: uppercase;
 	color: #626262;
+}
+
+.menu li:nth-child(2) {
+	padding-left: 110px;
 }
 
 .menu li a {
@@ -93,7 +98,7 @@ a {
 }
 
 .headerImg {
-	margin-top: 100px;
+	margin-top: 65px;
 }
 
 
@@ -112,12 +117,13 @@ a {
 	font-size: 14px;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 300;
-	margin-top: 95px;
+	margin-top: 93px;
 	color: #b4ad9e;
 }
 
 .acticleText {
-	margin-top: 30px;
+	margin-top: 17px;
+	letter-spacing: 1px;
 }
 
 .acticleText h2 {
@@ -127,12 +133,12 @@ a {
 }
 
 .acticleText p {
-	margin-top: 35px;
+	margin-top: 30px;
 	color: #626262;
 }
 
 .coment {
-	margin-top: 50px;
+	margin-top: 67px;
 	display: flex;
 }
 
@@ -175,12 +181,12 @@ a {
 }
 
 .galleryName {
-	margin-top: 32px;
+	/*margin-top: 32px;*/
 	display: flex;
 }	
 
 .galleryName a {
-	margin-top: 32px;
+	margin-top: 28px;
 	font-size: 14px;
 	font-family: 'Ubuntu', sans-serif;
 	text-transform: uppercase;
@@ -210,7 +216,7 @@ a {
 }
 
 .galleryInner h2 {
-	margin-top: 30px;
+	margin-top: 12px;
 	font-size: 30px;
 	font-family: 'Playfair Display', serif;
 	color: #626262;
@@ -234,13 +240,13 @@ a {
 	min-height: 286px;
 	background-color: #F0F0F0;
 	text-align: center;
-	margin-top: 175px;
+	margin-top: 110px;
 }
 
 .contact h2 {
 	font-family: 'Playfair Display', serif;
 	color: #333333;
-	padding: 75px 0 75px 0;
+	padding: 75px 0 70px 0;
 }
 
 .email {
