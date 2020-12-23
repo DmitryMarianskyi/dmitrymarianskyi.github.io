@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">  <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet" type="text/css">
+	    <title>Что такое Сайт-визитка? Разработка сайта Сайта-визитки. Преимущества и недостатки.</title>
+	    <meta name="description" content="Что такое Сайт-визитка? Если нужен недорогой, презентабельный сайт. Описывающий деятельность компании, ее услуг и контактных данных, сайт-визитка это лучший выбор."/>
+	    <meta name="author" content="Web Sky Studio">
+	</head>
+    
+
+<body>
+ 
+<!--HEADER-->
+<header>
+	<div class="header-container">
+		<nav class="navigation">
+			<div class="menu-toggle">
+				<img src="img/menu.png" class="menu" alt="openMenu">
+				<img src="img/cross.png" class="cross" alt="closeMenu">
+			</div>
+			<a href="index.html" class="logo"><img src="img/mylogo2.png" alt="logo"></a>
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link">Главная</a>
+				</li>
+				<li class="nav-item">
+					<a href="index.html#development" class="nav-link">Разработка сайта</a>
+				</li>
+				<li class="nav-item">
+					<a href="index.html#development" class="nav-link">Продвижение в сети</a>
+				</li>
+				<li class="nav-item">
+					<a href="index.html#type" class="nav-link">Виды сайтов</a>
+				</li>
+				<li class="nav-item">
+					<a href="index.html#contact" class="nav-link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!--end HEADER-->
+
+<!-- modal -->
+<div class="modal" onclick="modalOf()">
+	<div class="capture"></div>
+	<span class="closeModal" onclick="modalOf()">&times;</span>
+	<img  class="modalImg" src="#" alt="#">
+</div>
+<!-- end modal -->
+
+<section class="presentation-card">
+	<div class="presentaion-card-text">
+		<h1>Что такое сайт-визитка?</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere porro quisquam id, quasi at ullam suscipit deserunt, corrupti dolorem officiis veritatis. Maxime libero, ratione rem! Rem ad aspernatur dolorum dolores ab adipisci ut laborum, fuga vitae facere unde repellendus! Laboriosam nobis dignissimos libero in est amet animi itaque eum modi.</p>
+           
+		<h2>Разработка Сайта-визитки</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum beatae rerum nemo adipisci excepturi consequatur aliquid reprehenderit a hic, harum cumque necessitatibus atque qui explicabo consequuntur debitis perspiciatis quibusdam vitae veniam ullam repudiandae nostrum accusantium voluptate. Vel voluptatem recusandae officia minima modi natus ipsa quis laboriosam. Numquam est commodi velit accusantium eligendi corporis eveniet similique, itaque odit temporibus aliquam, esse, laudantium fuga nostrum maiores optio aspernatur. Doloremque, sint, amet!
+        <br>
+        И так рассмотрим пример простой демо версии страницы :</p>
+        
+        <div class="presentaion-card-img animate-bottom-reset">
+		    <img src="img/busness-card.jpg" alt="Сайт-визитка" class="myImg">
+		    <a href="businessСard/businessСard.html" class="btn cta-btn animate-left-reset">Тест сайта</a><!-- НЕ ИНДЕКСИРОВАТЬ -->
+	    </div>
+		
+		<h2 id="cardBack">Структура и эффективность</h2>
+		<p>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis vitae quis, voluptas quam maiores, corporis ipsa officiis saepe odit debitis cupiditate, quisquam. Fuga consequatur vitae adipisci ipsam recusandae pariatur fugiat ipsa quibusdam hic, modi voluptatibus voluptas soluta iure explicabo nesciunt enim commodi aliquam, sequi non dolore eius error eveniet. Quisquam, nostrum! Corrupti autem exercitationem, nostrum, eaque omnis ab voluptatem obcaecati, dicta saepe excepturi a. Deserunt consequuntur similique magni error!
+        </p>
+        <h2>Преимущества и недостатки</h2>
+		<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing, elit. In mollitia aliquid magnam nulla tempora expedita magni vel assumenda, delectus iusto praesentium ea molestias veniam eligendi officiis et ad repellendus hic, quae fugiat voluptates dignissimos? Quaerat debitis repellendus deleniti beatae neque ipsa quae quibusdam nisi, tempora, molestiae. Eum praesentium iusto odit laborum dolorum deleniti neque tempora nostrum mollitia, omnis quod dignissimos debitis pariatur consequuntur architecto, aspernatur blanditiis magnam eos soluta, modi nihil beatae saepe accusantium velit perferendis. Error, aspernatur impedit quasi nisi similique! Saepe neque, molestiae illo corporis, explicabo nulla veritatis cumque corrupti dolores, ipsum dolore sed rerum? Dolor soluta quisquam veritatis, eligendi quibusdam consectetur neque eius assumenda molestias doloremque expedita corporis voluptas adipisci iusto nobis est aliquam laudantium non aut.<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure soluta sequi in, eaque a sit dicta quis architecto maxime itaque. Perspiciatis atque sunt nostrum accusamus dolorum vitae odio, illum!
+        </p>
+    </div>
+</section>
+
+
+
+
+
+
+<footer>
+	<h2 class="animate-bottom-reset">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+	<p class="contact-us">Отправьте сообщение, мы ответим в кратчайшие сроки.</p>
+      <form action="handler.php" class="footer-form">
+       <input type="text" name="name" class="email" size="25" maxlength="40" placeholder="Имя">
+       <input type="text" name="email" class="email" size="25" maxlength="40" placeholder="email">
+       <textarea placeholder="Ваше сообщение......." class="emailContent"></textarea>
+       <input type="submit" value="Отправить" class="submit-btn">
+      </form>
+    <p class="copyright">© Dmitry Marianskyi 2020. All rights reserved</p>
+</footer>
+
+<!--SCRIPTS-->
+<!--scrollReveal-->
+<script type="text/javascript" src="assets/js/scrollreveal.min.js"></script>
+<!--mainScript-->
+<script src="assets/js/main.js"></script> 
+</body>
+</html>
