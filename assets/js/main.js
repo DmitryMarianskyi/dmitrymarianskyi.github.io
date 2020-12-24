@@ -1,3 +1,8 @@
+window.onload = function() {
+    alert('Страница загружена');
+}
+
+
 const selectElement = function(element) {
 	return document.querySelector(element)
 }
