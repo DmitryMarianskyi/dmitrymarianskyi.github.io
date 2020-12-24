@@ -181,3 +181,40 @@ $(document).ready(function() {
 	});
 
 });
+
+/*тест jq*/
+
+jQuery(function() {
+	
+$(".shlapa").css({               // так же по id $("#shlapa") или же просто по тагу $("div")
+	     
+	  "font-size":"34px",
+	  "color":"red",
+});                              // меняем свойства в классе .shlapa
+
+
+
+$("h1").click(function() {
+	$(this).toggleClass("blue")  //при Клике на ЭТОТ эл ему добавится класс blue (класс писать БЕЗ точки
+});
+
+$("h2").mouseenter(function(){
+	$(this).toggleClass("green") //при наведении меняет класс туда обратно
+});
+
+$("h2").mouseleave(function(){
+	$(this).toggleClass("blue") //при уводе мышки меняет класс
+});
+
+$("").focus(function(){
+	
+});
+
+$(".input__text").change(function(){
+	$(".js_text").text(", " +$(this).val());
+});
+
+
+$(".input__text2").keyup(function(){
+	$(".js_text2").text(", " +$(this).val());
+});
