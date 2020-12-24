@@ -180,8 +180,18 @@
 	<h2 class="animate-bottom-reset">Lorem ipsum, dolor sit amet, consectetur adipisicing elit.</h2>
 	<p class="contact-us" id="contact">Отправьте сообщение, мы ответим в кратчайшие сроки.</p>
       <form action="handler.php" class="footer-form">
-       <input type="text" name="name" class="email" size="25" maxlength="40" placeholder="Имя">
-       <input type="text" name="email" class="email" size="25" maxlength="40" placeholder="Email">
+           <!-- Hidden Required Fields -->
+		   <input type="hidden" name="project_name" value="Site Name">
+		   <input type="hidden" name="admin_email" value="admin@mail.com">
+		   <input type="hidden" name="form_subject" value="Form Subject">
+		   <!-- END Hidden Required Fields -->
+
+
+
+
+
+       <input type="text" name="Name" class="email" size="25" maxlength="40" placeholder="Имя">
+       <input type="text" name="E-mail" class="email" size="25" maxlength="40" placeholder="Email">
        <textarea placeholder="Ваше сообщение......." class="emailContent" maxlength="2000"></textarea>
        <input type="submit" value="Отправить" class="submit-btn">
       </form>
@@ -192,6 +202,8 @@
 
 <!--scrollReveal-->
 <script type="text/javascript" src="assets/js/scrollreveal.min.js"></script>
+<!-- JQ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--mainScript-->
 <script src="assets/js/main.js"></script> 
 
