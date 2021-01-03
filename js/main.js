@@ -12,9 +12,16 @@ menuToggler.addEventListener('click', function() {
 	body.classList.toggle('open')
 })
 
-document.getElementById('one').onclick = () => {
-	body.classList.toggle('open')
+
+/*=== to close menu on link click ===*/
+let menuLink = document.getElementsByClassName('nav-link')
+for (i = 0; i < menuLink.length; i++) {
+	menuLink[i].onclick = () => {
+		body.classList.toggle('open')
+	}
 }
+
+
 // Scroll reveal 
 
 
