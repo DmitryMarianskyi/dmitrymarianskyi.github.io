@@ -12,7 +12,9 @@ menuToggler.addEventListener('click', function() {
 	body.classList.toggle('open')
 })
 
-
+function close() {
+	body.classList.toggle('open')
+}
 
 // Scroll reveal 
 
