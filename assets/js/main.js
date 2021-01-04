@@ -1,5 +1,6 @@
 
 
+
 const selectElement = function(element) {
 	return document.querySelector(element)
 }
@@ -11,9 +12,15 @@ menuToggler.addEventListener('click', function() {
 	body.classList.toggle('open')
 })
 
-function close() {
-	body.classList.toggle('open')
+
+/*=== to close menu on link click ===*/
+let menuLink = document.getElementsByClassName('nav-link')
+for (i = 0; i < menuLink.length; i++) {
+	menuLink[i].onclick = () => {
+		body.classList.toggle('open')
+	}
 }
+
 
 // Scroll reveal 
 
@@ -185,4 +192,3 @@ $(document).ready(function() {
 });
 
 /*тест jq*/
-
