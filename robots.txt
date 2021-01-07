@@ -1,0 +1,10 @@
+User-agent: *
+User-agent: Gogglebot
+User-agent: Yandexbot  
+
+Disallow: /dmitrymarianskyi.github.io/landing/landing.html
+Disallow: /dmitrymarianskyi.github.io/business—ard/business—ard.html
+Disallow: /dmitrymarianskyi.github.io/blog/blog.html
+Disallow: /dmitrymarianskyi.github.io/internetMarket/market.html
+
+Sitemap: https://dmitrymarianskyi.github.io/sitemap.xml
