@@ -1,5 +1,11 @@
+/*== Menu ==*/
 
-
+let catBtn = document.getElementsByClassName('catBtn')[0]
+let categories = document.querySelector('.categories')
+console.log(categories)
+catBtn.onclick = () => {
+    categories.classList.toggle('show')
+}
 
 /*== Hot deals slider ==*/
 let active = 0;

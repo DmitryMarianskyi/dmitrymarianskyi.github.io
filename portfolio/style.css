@@ -158,6 +158,10 @@ img {
     max-width: 300px;
 }
 
+.categories.show li {
+	display: block;
+}
+
 .one {
 	margin-top: 20px !important;
 }
@@ -848,6 +852,7 @@ footer {
  
 
 @media (max-width:1012px) {
+
 	.categories li {
 		display: none;
 	}
@@ -985,7 +990,7 @@ footer {
     }
 
     .categories {
-    	top: 10%;
+    	top: 6%;
     } 
 
     .logo {
