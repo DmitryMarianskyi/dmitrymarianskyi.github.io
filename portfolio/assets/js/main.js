@@ -1,9 +1,8 @@
 /*== Menu ==*/
 
-let catBtn = document.getElementsByClassName('catBtn')[0]
 let categories = document.querySelector('.categories')
-console.log(categories)
-catBtn.onclick = () => {
+
+document.getElementsByClassName('catBtn')[0].onclick = () => {
     categories.classList.toggle('show')
 }
 
