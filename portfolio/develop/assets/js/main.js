@@ -6,6 +6,20 @@ window.onload = () => {
 	setTimeout(startDev, 1000);
 };
 
+/*====================== mobile menu toggle ==============*/
+
+let burger = document.querySelector('.openMobile')
+let cross = document.querySelector('.closeMobile')
+let body = document.querySelector('body')
+
+burger.onclick = () => {
+	body.classList.toggle('active')
+}
+
+cross.onclick = () => {
+	body.classList.toggle('active')
+}
+
 /*======================== startDev() ========================*/
 let devTitle = document.querySelector('.slogan');
 const devSlogan = 'Time to dev';
