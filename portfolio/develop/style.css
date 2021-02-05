@@ -80,7 +80,7 @@
     display: block;
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background: black;
@@ -648,6 +648,34 @@
 .submitOrder:not(:hover)::after {
     transition: .3s;
 }
+
+.mediaInfo {
+    display: none;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 15px;
+    margin: 0 auto 55px;
+    text-align: center;
+    font-family: 'OpenSansBold', Verdana, Tahoma, Arial, sans-serif;
+}
+
+.mediaInfoInner:nth-child(1) {
+    margin-bottom: 25px;
+}
+
+.mediaInfoInner div {
+    color: #ffff00;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.mediaInfoInner a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
 
 #btnArrowBot {
     width: 50px;
@@ -1464,8 +1492,84 @@ footer {
 
 @media (max-width: 1000px) {
     .openMobile {
-         display: block;
-     }
+        display: block;
+    }
+
+    /*-- section intro --*/
+    
+    .intro {
+        height: auto;
+        z-index: 800;
+    }
+
+    .intro:after {
+        display: none;
+    }
+
+    .header {
+        background-color: #212121;
+    }
+
+    .homeFirstScreen {
+        height: 675px;
+        background-image: url(img/mobileImg/mobileBg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+    }
+
+    .media {
+        display: none;
+    }
+
+    .headerInfo {
+        display: none;
+    }
+
+    .price {
+        display: none;
+    }
+    
+    .title {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .title div:nth-child(1) {
+        margin-left: 5%;
+    }
+    .title div:nth-child(2) {
+        margin-left: 25%;
+    }
+    .title div:nth-child(3) {
+        margin-left: 8%;
+    }
+    .title div:nth-child(4) {
+        margin-left: 25%;
+    }
+
+    .mediaInfo {
+        display: block;
+    }
+
+    #btnArrowBot {
+        bottom: -100px; /* hide arrow*/
+    }
+
+    /*--- section portfolio ---*/
+    .portfolioWrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*--- section questions ---*/
+    .questionsInner {
+        flex-direction: column;
+    }
+
+    .col {
+        width: initial;
+    }
 
 }
 
@@ -1529,3 +1633,4 @@ footer {
 
 
 /*25.00ч*/
+/*adaptive 1ч*/
