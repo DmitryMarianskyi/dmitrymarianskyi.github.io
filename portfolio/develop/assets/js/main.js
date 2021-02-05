@@ -1,8 +1,11 @@
-window.onload = () => {
+DOMContentLoaded.onload = () => {
 	title1();
 	setTimeout(title2, 500);
 	setTimeout(title3, 850);
 	setTimeout(title4, 1550);
+}
+
+window.onload = () => {
 	setTimeout(startDev, 1000);
 };
 
@@ -41,7 +44,7 @@ function again() {
 	startDev();
 };
 
-/*======================== title() += title4() ========================*/
+/*======================== title1() += title4() ========================*/
 let titleName = document.getElementsByClassName('titleName');
 let i1 = 0;
 let start1 = 0;
