@@ -2,13 +2,13 @@
 --Sections--
 44   mobile
 335  intro
-738  services
-810  portfolio
-974  questions
-1079 contactUs
-1253 footer
-1504 @meida
-1716 animation
+739  services
+811  portfolio
+975  questions
+1080 contactUs
+1254 footer
+1505 @meida
+1717 animation
 */
 
 * {
@@ -338,6 +338,7 @@
   overflow: hidden;
   position: relative;
   height: 100vh;
+  min-height: 850px;
 }
 
 .intro:after {
