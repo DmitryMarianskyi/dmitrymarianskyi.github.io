@@ -1,9 +1,9 @@
 /*
 23 Header
-177 mainMenu
-217 advertising
-267 products
-712 footer
+123 mainMenu
+225 advertising
+273 products
+708 footer
 */
 
 * {
@@ -113,7 +113,6 @@ img {
 	color: #FBFBFB;
 	padding-left: 5px;
     font-size: 14px;
-    
 }
 
 .price {
@@ -123,26 +122,38 @@ img {
 
 /*==== mainMenu ====*/
 
+.accordeon {
+	position: absolute;
+	left: 0;
+	cursor: pointer;
+}
+
+.accordeon span {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #fff;
+}
+
+.accordeon span:hover {
+	color: gold;
+}
+
 .categories {
 	position: absolute;
 	left: 0;
-	top: 33%;
+	top: 100%;
 	font-size: 15px;
 	color: #FBFBFB;
 	cursor: pointer;
 	z-index: 2;
 	max-width: 300px;
 	width: 100%;
-
 }
 
 .categories span {
 	cursor: pointer;
 }
 
-.categories span:hover {
-	color: gold;
-}
 
 .categories a {
 	margin-right: 18px;
@@ -162,14 +173,9 @@ img {
 	display: block;
 }
 
-.one {
-	margin-top: 20px !important;
-}
-
 .categories li a {
 	/*padding: 20px 150px 20px 20px;*/
 	background-color: #fff;
-	
 }
 
 .categories li a:hover {
@@ -198,7 +204,6 @@ img {
 .headerCategories {
 	display: flex;
 	list-style: none;
-
 }
 
 .headerCategories li a{
@@ -229,12 +234,10 @@ img {
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    
 }
 
 .advertisingInner {
     position: relative;
-
 }
 
 .advertisingInner img {
@@ -486,14 +489,12 @@ img {
 
 .newProductLink a {
 	color: #585858;
-	
 	text-decoration: none;
 	margin-right: 30px;
 }
 
 .newProductLink a:hover {
 	color: #F00E34;
-
 }
 
 .sliderContainer,
@@ -539,7 +540,6 @@ img {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-
 }
 
 .newsheader {
@@ -618,7 +618,6 @@ img {
     color: #000000;
     font-size: 22px;
     text-transform: uppercase;
-    
 }
 
 .compucterBtn {
@@ -645,8 +644,7 @@ img {
 .featured {
 	display: flex;
 	flex-direction: column;
-
-	margin: 40px 0 40px 40px;
+    margin: 40px 0 40px 40px;
 	width: 100%;
 	margin-bottom: 25px;
 	max-width: 830px;
@@ -665,7 +663,6 @@ img {
 .featuredContent {
 	padding: 0 25px 40px 25px;
 	background-color: #fff;
-	
 }
 
 
@@ -676,10 +673,6 @@ img {
 	background-color: #fff;
 	display:flex;
     float: right;
-}
-
-.featuredContentPic {
-	
 }
 
 .featuredContentInfo {
@@ -720,7 +713,6 @@ footer {
 }
 
 .footerWrapper {
-	
 	background-color: #ff0033;
 }
 
@@ -751,7 +743,6 @@ footer {
     font-size: 14px;
     color: #cccccc;
     font-family: sans-serif;
-
 }
 
 .infoInner p {
@@ -817,7 +808,6 @@ footer {
     .sliderContainer, 
     .sliderContainerLatest {
     	max-width: 600px;
-
     }
 
     .newProductHead, 
@@ -857,12 +847,13 @@ footer {
 		display: none;
 	}
 
-	.categories span {
+	.accordeon span {
 		display: none;
 	}
 
-	.categories a {
+    .accordeon {
 		margin-left: 5%;
+		top: 30%;
 	}
 
 	.total {
@@ -986,12 +977,16 @@ footer {
     }
 
     .headerCategories li {
-    	padding: 20px 0 20px 0;
+    	padding: 10px 0 20px 0;
     }
 
     .categories {
-    	top: 6%;
+    	top: 12%;
     } 
+    
+    .accordeon {
+		top: 3%;
+	}
 
     .logo {
     	display: none;
