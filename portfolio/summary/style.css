@@ -1114,6 +1114,16 @@ footer {
 }
 
 /*===================== MEDIA =====================*/
+@media (max-width: 1300px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .headerName a {
+        font-size: 60px;
+    }
+}
+
 
 @media (max-width:1100px) {
     .header {
