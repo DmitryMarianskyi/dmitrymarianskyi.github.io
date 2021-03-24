@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=""/>
+	<meta name="Dmitry Marianskyi" content="Web Sky Studio">
+	<!-- Open Graph data -->
+    <meta property="og:site_name" content="Summary"/>
+    <meta property="og:title" content="My Summary"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://dmitrymarianskyi.github.io/portfolio/summary"/>
+    <meta property="og:image" content="https://dmitrymarianskyi.github.io/portfolio/summary/img/Summary.jpg"/>
+    <meta property="og:description" content="Summary Page"/>
+    <!-- Fonts 
+    Oswald
+    Regular 400
+    font-family Oswald sans-serif
+    Hind
+    Regular 400
+    font-family Hind sans-serif
+    -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Oswald&display=swap" rel="stylesheet">
+    <title>Summary</title>
+</head>
+<body>
+
+<section class="intro">
+        <video class="media" src="video/coverr.mp4" autoplay muted loop></video>
+        <div class="header" id="top">
+            <div class="headerName">
+                <a href="#">
+                    <span>S</span>
+                    <span>U</span>
+                    <span>M</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>Y</span>
+                </a>
+            </div>
+
+            <div class="headerInfo">
+                <div class="infoTop">
+                    <div class="slogan"></div>
+                    <div class="infoTopInner">
+                        <div>Call:</div>
+                        <div>+38 (063) 953-29-22</div>
+                    </div>
+                    <div class="infoTopInner">
+                        <div>Write:</div>
+                        <div>DmitryMarianskyi@gmail.com</div>
+                    </div>
+                </div>
+                
+                <ul class="infoBot">
+                    <li class="activeMenu" ><a href="#">Main</a></li>
+                    <li><a href="#bot">Аbout me</a></li>
+                    <li><a href="#skills">My skills</a></li>
+                    <li><a href="#secrets">My secrets</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+            
+        </div><!-- end header -->
+
+        <div class="homeFirstScreen">
+            <div class="title">
+                <div><span class="titleName"></span></div>
+                <div><span class="titleName"></span></div>
+                <div><span class="titleName"></span></div>
+                <div><span class="titleName"></span></div>
+            </div>
+
+            <div class="submitOrder"><a href="#bot">Explore</a></div>
+            <div class="mediaInfo">
+                <div class="mediaInfoInner">
+                    <div>Call</div>
+                    <a href="#">+3 800 303 14 192</a>
+                </div>
+                <div class="mediaInfoInner">
+                    <div>Write</div>
+                    <a href="#">mail@webmaster.com</a>
+                </div>
+            </div>
+        </div><!-- end homeFirstScreen -->
+        <a href="#bot" id="btnArrowBot"></a>
+        <a href="#top" id="btnArrowTop"></a>
+</section><!-- end intro -->
+
+<section class="services">
+        <div class="servicesWrap">
+            <div class="servicesTitle" id="bot">About me</div>
+            <div class="servicesInner">
+                
+                <div class="development">
+                    <div class="devInner">
+                        <img src="img/me.jpg" alt="develop">
+                    </div>
+                </div>
+
+                <div class="development">
+                    <div class="devInner">
+                        <p>I studied at KPI as an engineer, worked in various fields: medicine, marketing, fire safety sphere.</p>
+                        <p>Two years ago I became interested in web development, my hobby has grown into a profession and now, now using the language of computers, I implement my ideas and help others to realize theirs.<br> I love stylish and unusual sites and am interested in everything related to their development.</p>
+                        <p>I love sports, games and black humor. I devote my free time to self-development(just need to be a little better than you were yesterday) and communication with loved ones. Comunicable, a bit of a perfectionist.</p>
+                        
+                    </div>
+                </div>
+
+            </div><!-- end servicesInner -->
+            <div class="servicesTitle">My hard skills</div>
+        </div><!-- end wrap -->
+</section><!-- end services -->
+
+<section class="portfolio" id="skills">
+        <div class="portfolioTitle">I can make layered blocks and animate them</div>
+        <div class="portfolioWrap">
+            <div class="portfolioItem">
+                <div class="ItemBgVid">
+                    <video src="video/flight.mp4" autoplay muted loop></video>
+                </div>
+                <div class="ItemInfo">
+                    <div class="infoLogo"><picture><img src="img/logo1.png" alt="logo"></picture></div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam error, laboriosam corrupti tempore dolorem molestias quisquam iusto iste aliquid eum.</div>
+                    <a class="ItemLink" href="">Button</a>
+                </div>
+            </div>
+
+
+            <div class="portfolioItem">
+                <div class="ItemBgImg nike"></div>
+                <div class="ItemInfo">
+                    <div class="infoLogo"><picture><img src="img/justDo.png" alt="logo"></picture></div>
+                    <div class="description">You know what to do, just ...</div>
+                    <a class="ItemLink" href="">Button</a>
+                </div>
+            </div>
+        </div><!-- end portfolioWrap -->
+        
+        <div class="portfolioTitle">Create responsive pages with many elements</div>
+        <div class="portfolioWrap">
+            <div class="portfolioPic">
+                <img class="myImg" src="img/Template-min.jpg" alt="img">
+            </div>
+
+            <div class="portfolioPic">
+                <img class="myImg" src="img/Tamplate2-min.jpg" alt="img">
+            </div>
+        </div><!-- end portfolioWrap -->
+
+        <div class="portfolioTitle">I use SVG and compressors whenever possible</div>
+        <!--modal-->
+        <div class="modal" onclick="modalOf()">
+            <div class="capture"></div>
+            <span class="closeModal" onclick="modalOf()">&times;</span>
+            <img  class="modalImg" src="#" alt="#">
+        </div>
+        <!-- end modal -->
+        <div class="portfolioWrap">
+            <div class="portfolioPic">
+                <img class="myImg" src="img/max.jpg">
+                <img class="myImg" src="img/min.jpg">
+            </div>
+
+            <div class="portfolioPic svg">
+                <svg class="andrew" viewBox="0 0 200 200" width="300" height="300">
+
+                    <g id="bird" class="bird">
+                        <g id="body" class="body">
+                            <path d="M48.42,78.11c0-17.45,14.14-31.58,31.59-31.58s31.59,14.14,31.59,31.58c0,17.44-14.14,31.59-31.59,31.59S48.42,95.56,48.42,78.11"/>
+                            <path d="M109.19,69.88c0,0-8.5-27.33-42.51-18.53c-34.02,8.81-20.65,91.11,45.25,84.73c40.39-3.65,48.59-24.6,48.59-24.6S124.68,106.02,109.19,69.88"/>
+                            <path class="wing" id="wing" d="M105.78,75.09c4.56,0,8.84,1.13,12.62,3.11c0,0,0.01-0.01,0.01-0.01l36.23,12.38c0,0-13.78,30.81-41.96,38.09c-1.51,0.39-2.82,0.59-3.99,0.62c-0.96,0.1-1.92,0.16-2.9,0.16c-15.01,0-27.17-12.17-27.17-27.17C78.61,87.26,90.78,75.09,105.78,75.09"/>
+                        </g>
+                        <g id="head">
+                            <path id="beak" d="M50.43,68.52c0,0-8.81,2.58-10.93,4.86l9.12,9.87C48.61,83.24,48.76,74.28,50.43,68.52"/>
+                            <circle class="eye-ball" cx="72" cy="71.5" r="11"/>
+                            <circle id="pupil" cx="72" cy="71.5" r="7"/>
+                            <circle class="eye-ball" cx="77" cy="74" r="5"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div><!-- end portfolioWrap -->
+</section><!-- end portfolio -->
+
+<section class="questions">
+        <div class="questionsWrap">
+            <div class="spaceTitle" id="secrets">I ALSO KNOW A FEW MORE TRICKS</div>
+            <div class="questionsInner">
+                <div class="col">
+                    <div class="questionsContent">
+                        <div class="questionsBtn">
+                            <div class="preTitle"><span class="preTitleInner"></span></div>
+                            <div class="questionsTitle">Additional skills</div>
+                        </div>
+
+                        <div class="questionsText">
+                           I can connect and configure (jQuery, scrollrevial, ripples ...) libraries.
+                           I can create parallax effects. Familiar with SCSS but not used in real projects. I understand how GIT works. I can work with psd in Photoshop, and have figma account)
+                        </div>
+                    </div>
+                    <div class="questionsContent">
+                        <div class="questionsBtn">
+                            <div class="preTitle"><span class="preTitleInner"></span></div>
+                            <div class="questionsTitle">Work style</div>
+                        </div>
+
+                        <div class="questionsText">
+                            I copy the finished pages with high precision. I use BEM. (this makes it painless replace blocks and sections, supplement and repeat parts of the page if necessary) In my works I try to use minimal nesting and flex box.
+                        </div>
+                    </div>
+                </div><!-- end col -->
+                
+                <div class="col">
+                    <div class="questionsContent">
+                        <div class="questionsBtn">
+                            <div class="preTitle"><span class="preTitleInner"></span></div>
+                            <div class="questionsTitle">Code</div>
+                        </div>
+
+                        <div class="questionsText">
+                            I know a few js tricks for working with the DOM. Studied JS at a basic level to understand and work with selectors, I implement simple scripts to render forntend effects. Currently studying WP work.
+                        </div>
+                    </div>
+                    <div class="questionsContent">
+                        <div class="questionsBtn">
+                            <div class="preTitle"><span class="preTitleInner"></span></div>
+                            <div class="questionsTitle">What i believe in?</div>
+                        </div>
+
+                        <div class="questionsText">
+                            Because I'm used to solving my own problems. I believe that if there is a desire and time, a high skill of Googel search can create real miracles :)
+                        </div>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end questionsInner -->
+        </div><!-- questionsWrap -->
+    </section><!-- end questions -->
+
+<section class="contact" id="contact">
+        <div class="contactWrap">
+            <div class="contactTitle">Write me</div>
+            <div class="contactDescription">Lorem ipsum dolor sit amet consectetur adipisicing, elit.</div>
+            <form action="#" class="contactForm">
+                <div class="contactFormInner rotateZ">
+                    <div class="innerTop">
+                        <div class="innerTopLeft">
+                            <div class="formInput">
+                                <input type="text" id="name" name="name">
+                                <label class="ar" for="name">What is your name?</label>
+                            </div>
+                            <div class="formInput">
+                                <input type="text" id="phone" name="phone">
+                                <label for="phone">Phone number</label>
+                            </div>
+                            <div class="formInput">
+                                <input type="text" id="email" name="email">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="innerTopRight">
+                            <div class="formInput">
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                <label for="message">Аbout the project</label>
+                            </div>
+                        </div>
+                    </div><!-- end innerTop -->
+                    <div class="innerBotom">
+                        <div class="sendBtn">Send letter</div>
+                        <div class="arrow">Completed the field?</div>
+                    </div>
+                </div><!-- end contactFormInner -->
+            </form>
+
+
+        </div><!-- end contactWrap -->
+</section><!-- end contact -->
+
+<footer>
+        <div class="parallax">
+            <div class="parallaxInner">
+                <div class="innerLeft">© 2021 <br> 
+                Idea - Oleg Tatarchuk <br>
+                Design - totonis.com <br>
+                Сreator - Dmitry Marianskyi
+                 </div>
+                <div class="innerRight">
+                    <div class="innerRightInfo"><i class="fas fa-download"></i>Thanks for being with me :)</div>
+                </div>
+                
+                <div class="parallaxContent">
+                    <svg width="600" height="600">
+                        <polygon points="10,400 250,10 500, 400"></polygon>
+                    </svg>
+                </div>
+            </div><!--end parallaxInner -->
+        </div><!-- end parallax -->
+</footer>
+<!--= SCRIPTS =-->
+<!-- scrollReveal -->
+<script type="text/javascript" src="assets/js/scrollreveal.min.js"></script>
+
+<!-- JQ -->
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+
+<!-- jQ ripples-min -->
+<script src="assets/js/jquery.ripples-min.js"></script>
+
+<!-- mainScript -->
+<script src="assets/js/main.js"></script> 
+
+<!-- ICON https://fontawesome.com -->
+<script src="https://kit.fontawesome.com/66d8108444.js" crossorigin="anonymous"></script>
+</body>
+</html>
