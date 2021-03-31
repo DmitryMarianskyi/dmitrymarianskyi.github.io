@@ -1162,6 +1162,7 @@ footer {
 
     .development  {
         text-align: center;
+        justify-content: center;
     }
     .portfolioPic img {
         max-width: 300px;
