@@ -1,0 +1,6 @@
+1. html разметка
+   а) Google Analytics
+   б) <meta name="description" content=""/>
+      <meta name="author" content="Web Sky Studio">
+   в) Open Graph data 
+   г) библиотеки и скрипты + главный скрипт
