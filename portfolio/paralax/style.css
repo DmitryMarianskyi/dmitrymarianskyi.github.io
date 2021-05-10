@@ -329,25 +329,25 @@
 
 }
 
-@media(max-width: 415px) {
+@media(max-width: 414px) {
 	.content-article {
 		max-height: 405px;
 	}
 }
 
-@media(max-width: 361px) {
-	.content-article {
-		max-height: 320px;
-	}
-}
-
-@media(max-width: 376px) {
+@media(max-width: 375px) {
 	.content-article {
 		max-height: 350px;
 	}
 }
 
-@media(max-width: 326px) {
+@media(max-width: 360px) {
+	.content-article {
+		max-height: 320px;
+	}
+}
+
+@media(max-width: 320px) {
 	.content-article {
 		max-height: 250px;
 	}
