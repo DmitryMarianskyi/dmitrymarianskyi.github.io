@@ -335,6 +335,12 @@
 	}
 }
 
+@media(max-width: 361px) {
+	.content-article {
+		max-height: 320px;
+	}
+}
+
 @media(max-width: 376px) {
 	.content-article {
 		max-height: 350px;
