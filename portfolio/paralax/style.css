@@ -20,6 +20,7 @@
 	position: relative;
 	height: 100%;
 }
+
 .mount {
 	position: fixed;
 	width: 100%;
@@ -127,8 +128,7 @@
 	position: absolute;
 	top: 150%; left: 0; bottom: 0; right: 0;
 	margin: auto;
-	
-   cursor: pointer;
+	cursor: pointer;
    transition: all .2s linear;
 
    animation: sloganOne 5s forwards;
@@ -175,13 +175,14 @@
 
 .active .content {
 	animation: content 3s forwards;
-	animation-delay: 12s;
+	animation-delay: 13s;
 }
 
 .content-wrap {
 	max-width: 1170px;
 	margin: 0 auto;
 }
+
 .title {
 	text-align: center;
 	text-transform: uppercase;
@@ -189,6 +190,7 @@
 	padding: 0px 20px;
 	font-size: 50px;
 }
+
 .sub-title {
 	text-align: center;
 	text-transform: uppercase;
@@ -196,6 +198,7 @@
 	padding: 0px 20px;
 	font-size: 50px;
 }
+
 .content-article {
 	background-color: rgba(255,255,255, .5);
 	font-size: 20px;
@@ -212,9 +215,6 @@
 		transform: scale(3);
 	}
 }
-
-
-
 
 @keyframes MoveLeft {
 	0% {
@@ -275,10 +275,9 @@
 @keyframes sloganOne {
 	0% {
 		opacity: 0;
-	}
-	5% {
 		top:-5%;
 	}
+
 	50% {
 		
 		opacity: 1;
