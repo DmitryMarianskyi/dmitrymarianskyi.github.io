@@ -1,0 +1,1538 @@
+
+/*--- var() ---*/
+:root {
+	--main-color: #AE0F0A;
+	--bg-color: #FFF7EE;
+	--font-color: #4E4E4E;
+}
+
+
+/*-------------- fonts ----------*/
+@font-face {
+	font-family: 'Averta CY Bold';
+	src: url('fonts/Averta Bold.eot');
+	src: local('☺'), url('fonts/Averta Bold.woff') format('woff'), url('fonts/Averta Bold.ttf') format('truetype'), url('fonts/Averta Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Averta CY Semibold';
+	src: url('fonts/Averta Semibold.eot');
+	src: local('☺'), url('fonts/Averta Semibold.woff') format('woff'), url('fonts/Averta Semibold.ttf') format('truetype'), url('fonts/Averta Semibold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Averta CY Regular';
+	src: url('fonts/AvertaStd-Regular.eot');
+	src: local('☺'), url('fonts/AvertaStd-Regular.woff') format('woff'), url('fonts/AvertaStd-Regular.ttf') format('truetype'), url('fonts/AvertaStd-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue Bold';
+	src: url('fonts/BebasNeue Bold.eot');
+	src: local('☺'), url('fonts/BebasNeue Bold.woff') format('woff'), url('fonts/BebasNeue Bold.ttf') format('truetype'), url('fonts/BebasNeue Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue Book';
+	src: url('fonts/BebasNeue Book.eot');
+	src: local('☺'), url('fonts/BebasNeue Book.woff') format('woff'), url('fonts/BebasNeue Book.ttf') format('truetype'), url('fonts/BebasNeue Book.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue Regular';
+	src: url('fonts/BebasNeue Regular.eot');
+	src: local('☺'), url('fonts/BebasNeue Regular.woff') format('woff'), url('fonts/BebasNeue Regular.ttf') format('truetype'), url('fonts/BebasNeue Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/*------ icons fonts -----*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icons/icomoon.eot?lmmrwb');
+  src:  url('fonts/icons/icomoon.eot?lmmrwb#iefix') format('embedded-opentype'),
+    url('fonts/icons/icomoon.ttf?lmmrwb') format('truetype'),
+    url('fonts/icons/icomoon.woff?lmmrwb') format('woff'),
+    url('fonts/icons/icomoon.svg?lmmrwb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\fb";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-arrow-right:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+
+
+/* ---  MAIN SYLE ---*/
+.mobile-menu {
+	display: none;
+}
+/*================= section main ====================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.main {
+	background-image: url(img/Rectangle1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 700px;
+}
+
+.main-header {
+	padding-top:20px;	
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1240px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-menu {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	max-width: 432px;
+	justify-content: space-between;
+}
+
+.header-menu li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.header-menu li a {
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Averta CY Semibold';
+	-webkit-transition: .3s ease-in-out;
+   -moz--transition:  .3s ease-in-out;
+   transition: .3s ease-in-out;
+}
+
+.header-menu li a:hover {
+	color: var(--main-color);
+}
+
+.header-menu li a:after {
+    background-color: var(--main-color);
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.header-menu li a:hover:after,
+.header-menu li a:focus:after {
+    width: 100%;
+}
+
+.logo {
+	animation:  2s ease-in vision;
+}
+
+.phone {
+	width: 100%;
+	max-width: 432px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.main-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 86px 0 auto;
+}
+
+.content-title h1 {
+	font-family: 'Bebas Neue Bold';
+	color: var(--main-color);
+	font-size: 30px;
+	letter-spacing: 3px; 
+}
+
+.content-description {
+	max-width: 683px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.content-description h2 {
+	font-family: 'Averta CY Semibold';
+	font-size: 60px;
+	color: #fff;
+}
+
+.content-btn {
+	max-width: 440px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.btn {
+	font-family: 'Bebas Neue Regular';
+	font-size: 18px;
+	letter-spacing: 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 60px;
+	text-transform: uppercase;
+	transition: .3s linear;
+	cursor: pointer;
+}
+
+.btn.left {
+	border: 1px solid #EDD6BC;
+	color: #EDD6BC;
+}
+
+.btn.left:hover {
+	background-color: #EDD6BC;
+	color: #221F20;
+}
+
+.btn.right {
+	border: 1px solid #EDD6BC;
+	color: #221F20;
+	background-color: #EDD6BC;
+}
+
+.btn.right:hover {
+	background-color: var(--bg-color);
+}
+
+/*==================== section about =================*/
+
+.about {
+	background-color: var(--bg-color);
+   height: 900px;
+}
+
+.about-inner {
+	width: 100%;
+	max-width: 1188px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin: 0  auto;
+	z-index: 2;
+	position: relative;
+}
+
+.about-sliderImg {
+	width: 100%;
+	max-width: 851px;
+	z-index: 2;
+	position: absolute;
+	right: 0;
+	top: 100px;
+}
+
+.bgImg {
+	width: 100%;
+	max-width: 541px;
+	position: absolute;
+	right: -100px;
+	bottom: -50px;
+}
+
+.about-slider {
+	display: none;
+}
+
+.about-slider.active-slide  {
+	display: block;
+	top: 175px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	max-width: 505px;
+	padding: 60px 50px 60px 50px;
+	background-color: #fff;
+	z-index: 3;
+	animation:  1s ease-in vision;
+}
+
+.slider-preTitle h2 {
+	color: #EDD6BC;
+	font-family: 'Bebas Neue Book';
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.slider-title {
+	margin-top: 10px;
+}
+
+.slider-title h2 {
+	font-family: 'Averta CY Semibold';
+	font-size: 46px;
+	color: #221F20;
+}
+
+.slider-description {
+	margin-top: 30px;
+	font-family: 'Averta CY Regular';
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.about-slider-btn {
+	position: absolute;
+	left: 50px;
+	bottom: 100px;
+	width: 100%;
+	max-width: 252px;
+	display: flex;
+	justify-content: space-between;
+	z-index: 3;
+}
+
+.slider-btn-left,
+.slider-btn-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	transition: .2s linear;
+	background-color: #fff;
+}
+
+.slider-btn-left:hover,
+.slider-btn-right:hover {
+	background-color: var(--main-color);
+}
+
+
+/*============== section product ================*/
+
+
+.product-inner {
+	width: 100%;
+   padding-bottom: 100px;
+	background-color: var(--main-color);
+}
+
+.product-info {
+	display: flex;
+	flex-direction: column;
+	max-width: 1188px;
+	margin: 0 auto;
+	padding-top:100px;
+	padding-bottom: 35px;
+}
+
+.product-preTitle h2 {
+	font-family: 'Bebas Neue Book';
+	letter-spacing: 2px;
+	font-size: 20px;
+	color: #EDD6BC;
+	text-transform: uppercase;
+}
+
+.product-title h2 {
+	font-family: 'Averta CY Semibold';
+	font-size: 46px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.product-description p {
+	font-family: 'Averta CY Regular';
+	font-size: 18px;
+	color: #fff;
+	max-width: 750px;
+	margin-top: 30px;
+}
+
+.btn.product {
+	border: 1px solid #EDD6BC;
+	color: #221F20;
+	background-color: #EDD6BC;
+	margin-top: 115px;
+}
+
+.btn.product:hover {
+	background-color: var(--bg-color);
+}
+
+/*--------- slick slider -----------*/
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+/*------ product-slider ------*/
+.product-slider {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1300px;
+	min-height: 420px;
+}
+
+.product-slider .slick-arrow {
+	position: absolute;
+	bottom: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: none;
+	font-size: 0;
+	cursor: pointer;
+}
+
+.product-slider .slick-arrow.slick-prev {
+	left: 0;
+	background: url(img/arrow8.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.product-slider .slick-arrow.slick-next {
+	right: 50px;
+	background: url(img/arrow7.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.product-slider-item {
+
+}
+
+.product-slider-item img {
+	width: 100%;
+	max-width: 600px;
+}
+
+.slider-item-name {
+	font-family: 'Bebas Neue Regular';
+	color: #EDD6BC;
+	font-size: 24px;
+	margin:  15px 0 15px 0;
+}
+
+/*================= section reviews ====================*/
+
+.reviews-inner {
+	background: url(img/Rectangle12.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 100px 0 100px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reviews-inner-info {
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner-info-preTitle h2 {
+	color: #EDD6BC;
+	font-family: 'Bebas Neue Book';
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.inner-info-title h2 {
+	font-family: 'Averta CY Semibold';
+	font-size: 46px;
+	color: #fff;
+}
+
+.inner-info-content {
+	position: relative;
+	margin-top: 30px;
+}
+
+.innerBg {
+	max-width: 1000px;
+	width: 100%;
+	height: 260px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	background-color: var(--bg-color);
+	z-index: -1;
+}
+
+.info-content-man {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: 700px;
+	width: 700px;
+	height: 372px;
+}
+
+.info-content-man img {
+	margin-top: 20px;
+}
+
+.info-content-man :nth-child(3) {
+	margin-top: 10px;
+}
+
+.info-content-man h2	{
+	font-family: 'Bebas Neue Regular';
+	color: #221F20;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.info-content-man p {
+	max-width: 516px;
+	margin-top: 20px;
+	font-family: 'Averta CY Regular';
+	font-weight: normal;
+	font-size: 16px;
+	text-align: center;
+}
+
+.reviews-arrow {
+	display: none;
+}
+
+.inner-info-btn {
+	margin-top: 30px;
+	max-width: 440px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* =============== section agregators ============= */
+.agregators {
+	background-color: var(--bg-color);
+}
+
+.agregators-inner {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	min-height: 550px;
+	position: relative;
+}
+
+.agregators-info {
+	display: flex;
+	justify-content: space-around;
+	z-index: 2;
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	max-width: 1100px;
+}
+
+.find {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 550px;
+	padding-left: 50px;
+}
+
+.find-preTtle h2 {
+	font-family: 'Bebas Neue Book';
+	text-transform: uppercase;
+	color: var(--main-color);
+}
+
+.find-title h2 {
+	font-family: 'Averta CY Semibold';
+	color: #221F20;
+	font-size: 46px;
+	margin-top: 10px;
+}
+
+.find-text p {
+	font-family: 'Averta CY Regular';
+	font-size: 18px;
+	color: var(--font-color);
+	max-width: 350px;
+	margin-top: 30px;
+	line-height: 1.5em;
+}
+
+.find-img {
+	margin-top: 40px;
+}
+
+.agregators-bg {
+	position: absolute;
+	right: 0;
+	top: 50px;
+	z-index: 1;
+}
+
+.food {
+	min-height: 900px;
+	background-color: var(--main-color);
+}
+
+.food-inner {
+	width: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.food-info {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	z-index: 3;
+}
+
+.food-info-preTitle h2 {
+	font-family: 'Bebas Neue Book';
+	text-transform: uppercase;
+	color: #EDD6BC;
+	font-size: 20px;
+}
+
+.food-info-title h2 {
+	font-family: 'Averta CY Semibold';
+	font-size: 46px;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.food-info-text p {
+	max-width: 700px;
+	font-family: 'Averta CY Regular';
+	font-weight: normal;
+	font-size: 18px;
+	color: #fff;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.food-inner-img {
+	position: absolute;
+	top: 370px;
+	z-index: 2;
+}
+
+.food-inner-img img {
+	width: 100%;
+	max-width: 1240px;
+}
+
+.food-slider {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1300px;
+}
+
+.food-slider.slick-initialized.slick-slider {
+	padding-top: 20px;
+}
+
+.food-slider .slick-list.draggable {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.food-slider-item {
+	display: flex;
+	justify-content: center;
+
+}
+
+.food-slider-item a {
+	font-family: 'Bebas Neue Book';
+	color: #EDD6BC;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	opacity: .5;
+}
+
+.food-slider .slick-slide.slick-center a {
+	opacity: 1;
+}
+
+.food-slider .slick-arrow {
+	position: absolute;
+	bottom: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: none;
+	font-size: 0;
+	cursor: pointer;
+}
+
+.food-slider .slick-arrow.slick-prev {
+	left: 0;
+	background: url(img/arrow8.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 10;
+}
+
+.food-slider .slick-arrow.slick-next {
+	right: 0;
+	background: url(img/arrow7.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 10;
+}
+
+/*============= section map ==============*/
+
+.map {
+	background-color: var(--bg-color);
+}
+
+.map-inner {
+	margin: 0 auto;
+	max-width: 1440px;
+	position: relative;
+}
+
+.map-inner-content {
+	z-index: 1;
+}
+
+.map-info {
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	z-index: 2;
+	background-color: var(--bg-color);
+	width: 505px;
+	height: 450px;
+	padding: 50px;
+}
+
+.map-info-preTitle h2{
+	font-family: 'Bebas Neue Book';
+	color: #EDD6BC;
+	font-size: 20px;
+}
+
+.map-info-title h2 {
+	font-family: 'Averta CY Semibold';
+	font-size: 46px;
+	color: var(--font-color);
+}
+
+.map-info-phone h2 {
+	font-family: 'Averta CY Regular';
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--font-color);
+}
+
+.map-info-email h2 {
+	font-family: 'Averta CY Regular';
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--font-color);
+}
+
+.map-info-adress h2 {
+	font-family: 'Averta CY Regular';
+  font-size: 18px;
+	color: var(--font-color);
+}
+
+.map-info-phone,
+.map-info-email,
+.map-info-adress {
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.map-info-phone img,
+.map-info-email img,
+.map-info-adress img {
+	margin-right: 20px;
+}
+
+.btn.red {
+	background-color: var(--main-color);
+	color: #FFFFFF;
+	font-family: 'Bebas Neue Book';
+	margin-top: 30px;
+}
+
+.btn.red:hover {
+	background-color: #C32B26;
+}
+
+/*================ footer =============*/
+
+footer {
+	background-color: #221F20;
+}
+
+.footer-inner {
+	width: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+	min-height: 286px;
+}
+
+.footer-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 60px;
+}
+
+.footer-top-left {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 800px;
+}
+
+.footer-menu {
+	display: flex;
+	width: 100%;
+	max-width: 356px;
+}
+
+.footer-menu li {
+	list-style: none;
+}
+
+.footer-menu li a {
+	font-family: 'Averta CY Regular';
+	color: #ffffff;
+	font-size: 16px;
+	margin: 0 17px;
+	text-decoration: none;
+	transition: .2s;
+}
+
+.footer-menu li a:hover {
+	color: var(--main-color);
+}
+
+.footer-top-right {
+
+}
+
+.footer-social {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer-social img {
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.footer-social img:hover {
+	opacity: .7;
+}
+
+.footer-bottom {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 20px;
+}
+
+.footer-bottom-work h2 {
+	font-family: 'Averta CY Semibold';
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.footer-bottom-work p {
+	font-family: 'Averta CY Regular';
+	font-size: 14px;
+	color: #ffffff;
+	margin-top: 5px;
+	letter-spacing: 1.5px;
+}
+
+.footer-copyright span {
+	color: rgba(255, 255, 255, .6);
+}
+
+.footer-ention {
+	display: flex;
+	align-items: center;
+}
+
+.footer-ention span {
+	font-family: 'Averta CY Regular';
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.footer-ention img {
+	margin: 0 10px;
+}
+
+
+
+
+
+
+
+/*.one {
+	font-family: 'Averta CY Bold';
+}
+.two {
+	font-family: 'Averta CY Semibold';
+}
+.three {
+	font-family: 'Averta CY Regular';
+}
+.four {
+	font-family: 'Bebas Neue Bold';
+}
+.five {
+	font-family: 'Bebas Neue Book';
+}
+.six {
+	font-family: 'Bebas Neue Regular';
+}*/
+
+
+
+
+/*========== media ========*/
+
+@media(max-width: 1400px) {
+	.bgImg {
+		display: none;
+	}
+
+	.product-info {
+		padding-left: 30px;
+	}
+
+	.food-inner-img {
+		left: 30px;
+	}
+	.food-inner-img img {
+		max-width: 900px;
+	}
+	.food-slider {
+		max-width: 900px;
+	}
+	.food {
+		min-height: 800px;
+	} 
+
+	.footer-top-left {
+		justify-content: center;
+	}
+	
+	.footer-top {
+		justify-content: initial;
+	} 
+
+	.footer-bottom {
+		justify-content: space-around;
+	}
+}
+
+@media(max-width: 1240px) {
+	.header-menu {
+		justify-content: space-around;
+	}
+	.phone {
+		justify-content: center;
+	}
+
+	.product-slider-item img {
+		padding: 10px;
+	}
+	.slider-item-name {
+		margin-left: 10px;
+	}
+	.product-slider .slick-arrow.slick-prev {
+		margin-left:10px;
+	}
+}
+
+@media(max-width: 1000px) {
+	.product-inner {
+		padding-bottom: 50px;
+	}
+
+	.agregators-bg {
+		display: none;
+	}
+
+	.innerBg {
+		display: none;
+	}
+
+	.food-inner-img {
+		max-width: 600px;
+	}
+
+	.footer-top {
+		justify-content: space-around;
+		align-items: initial;
+	}
+	.footer-top-left {
+		flex-direction: column;
+		width: initial;
+	}
+	.footer-menu {
+		flex-direction: column;
+	}
+	.footer-menu li {
+		text-align: center;
+		margin-top: 20px;
+	}
+	.footer-social img {
+		margin: 25px 10px 20px 20px;
+	}
+	.footer-bottom {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 30px;
+	}
+	.footer-copyright {
+		margin-top: 30px;
+	}
+	.footer-ention {
+		margin-top: 30px;
+	}
+}
+
+@media(max-width: 750px) {
+	.info-content-man {
+		width: initial;
+		padding: 10px;
+	}
+  .inner-info-btn {
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  }
+  .inner-info-btn .btn.left {
+  	margin-top: 10px;
+  }
+  .reviews-inner {
+  	padding-bottom: 40px;
+  }
+
+
+	.find {
+		margin: 40px 15px 30px 15px;
+		padding-left: 0;
+		width: initial;
+	}
+
+	.agregators-inner {
+		position: initial;
+	}
+	.agregators-info {
+		position: initial;
+		display: flex;
+		flex-direction: column;
+	}
+	.reviews-arrow {
+		display: flex;
+		margin-top: 10px;
+		width: 100%;
+		max-width: 130px;
+		justify-content: space-between;
+	}
+
+	.food {
+		min-height: initial;
+	}
+	.food-inner {
+		position: initial;
+	}
+	.food-info {
+		position: initial;
+		padding-top: 30px;
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+	.food-inner-img {
+		position: initial;
+		padding: 17px;
+	}
+
+	.map-info {
+		width: initial;
+		height: initial;
+		top: 100px;
+		left: 20px;
+	}
+
+	.footer-bottom {
+		padding-bottom: 20px;
+	}
+}
+
+@media(max-width: 650px) {
+	.main {
+		overflow: hidden;	
+	}
+	.main-header {
+		display: none;
+	}
+
+
+/*---------- mobile menu ---------*/
+	.mobile-menu {
+		display: flex;
+	}
+
+	.mobile-menu-inner {
+		width: 100%;
+	  
+		background-color: #221F20;
+		position: fixed;
+		z-index: 100;
+	}
+
+	.mobile-menu-inner img {
+		margin-top: 10px;
+		margin-left: 15px;
+	}
+
+	.menu-btn {
+		z-index: 100;
+		width: 50px;
+		height: 25px;
+		cursor: pointer;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+	}
+
+	.menu-btn span,
+	.menu-btn::before,
+	.menu-btn::after {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 10%;
+		transition: all .3s ease 0s;
+		background-color: #ffffff;
+	}
+	.menu-btn::before,
+	.menu-btn::after {
+		content: "";
+	}
+	.menu-btn::before {
+		top: 0;
+	}
+	.menu-btn::after {
+		bottom: 0;
+	}
+	.menu-btn span {
+		top: 50%;
+		transform: scale(1) translateY(-50%);
+	}
+
+	.active .menu-btn span {
+		top: 50%;
+		transform: scale(0) translateY(-50%);
+	}
+
+	.active .menu-btn::before {
+		top: 50%;
+		transform: rotate(-45deg) translate(0, -50%);
+	}
+
+	.active .menu-btn::after {
+		bottom: 50%;
+		transform: rotate(45deg) translate(0, 50%);
+	}
+
+	.mobile-info {
+		display: flex;
+		flex-direction: column;
+		height: 0;
+		overflow: hidden;
+		transition: height .5s;
+	}
+
+	.active .mobile-info {
+		height: 280px;
+	}
+
+	.mobile-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 356px;
+	}
+
+	.mobile-list li {
+		list-style: none;
+		margin-top: 15px;
+	}
+
+	.mobile-list li a {
+		font-family: 'Averta CY Regular';
+		color: #ffffff;
+		font-size: 16px;
+		margin: 0 17px;
+		text-decoration: none;
+		transition: .2s;
+	}
+
+	.mobile-list li a:hover {
+		color: var(--main-color);
+	}
+
+	.mobile-info .phone.icon-phone {
+		justify-content: flex-start;
+		margin-left: 15px;
+		margin-top: 27px;
+	}
+
+	.mobile-social {
+		display: flex;
+		margin-top: 30px;
+		margin-bottom: 34px;
+	}
+
+	.mobile-social img {
+ 	 cursor: pointer;
+ 	 margin: 0 15px 0 15px;
+	}
+
+	.mobile-social img:hover {
+		opacity: .7;
+	}
+}
+
+@media(max-width: 450px) {
+	/*------ section main -------*/
+	.main {
+		min-height: 600px;
+	}
+	.content-title h1 {
+		font-size: 20px;
+		margin-top: 36px;
+	}
+	.content-description h2 {
+		font-size: 40px;
+	}
+	.content-btn {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0;
+	}
+	.content-btn .btn {
+		margin-top: 25px;
+	}
+
+	.slider-preTitle h2 {
+		font-size: 14px;
+	}
+	.slider-title h2 {
+		font-size: 30px;
+	}
+	.slider-description p {
+		font-size: 14px;
+	}
+	/*------ section about -----*/
+	.about {
+		height: 630px;
+	}
+	.about-slider.active-slide {
+		padding: 15px;
+		top: 40px;
+		margin: 15px;
+		max-width: 290px;
+	}
+	.about-sliderImg {
+		top: 280px;
+		min-height: 350px;
+	}
+	.about-inner {
+		margin: 0 auto;
+		justify-content: center;
+	}
+	.about-slider-btn {
+		position: initial;
+		max-width: 100px;
+		align-self: flex-end;
+		margin-bottom: 80px;
+	}
+	/*----- section product ----*/
+	.product-info {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 40px;
+	}
+	.product-preTitle h2 {
+		font-size: 14px;
+	}
+	.product-title h2 {
+		font-size: 30px;
+	}
+	.product-description p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.btn.product {
+		margin-top: 20px;
+	}
+	.product-slider {
+		min-height: 350px;
+	}
+	.product-slider .slick-arrow.slick-prev {
+		left: 30%;
+		background: url(img/Group236.svg);
+		width: 40px;
+		height: 40px;
+	}
+	.product-slider .slick-arrow.slick-next {
+		right: 30%;
+		background: url(img/Group237.svg);
+		width: 40px;
+		height: 40px;
+	}
+	/*---- section reviews ----*/
+	.inner-info-preTitle h2 {
+		font-size: 14px;
+	}
+	.inner-info-title h2 {
+		font-size: 30px;
+	}
+	.info-content-man {
+		margin: 15px;
+	}
+	/*---- section agregators -----*/
+	.find-preTtle h2 {
+		font-size: 14px;
+	}
+	.find-title h2 {
+		font-size: 30px;
+	}
+	.find-text p {
+		font-size: 14px;
+		margin-top: 15px;
+	}
+	.find-img {
+		margin-top: 30px;
+	}
+	/*---- section food ----*/
+	.food {
+		min-height: 700px;
+	}
+	.food-info-preTitle h2 {
+		font-size: 14px;
+	}
+	.food-info-title h2 {
+		font-size: 30px;
+	}
+	.food-info-text p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.food-inner-img {
+		width: 290px;
+		height: 180px;
+		margin: 17px auto;
+		padding: 0;
+	}
+	.food-inner-img img {
+		width: 290px;
+		height: 180px;
+	}
+	.food-slider.slick-initialized.slick-slider {
+		padding: 0;
+		margin-top: 50px;
+	}
+	.food-slider-item {
+		width: 100px;
+	}
+	/*----- section map -----*/
+	.map-info {
+		padding: 15px;
+		margin: 15px;
+		left: 0;
+	}
+	.map-info-preTitle h2 {
+		font-size: 15px;
+	}
+	.map-info-title h2 {
+		font-size: 30px;
+	}
+	/* ----- footer ---- */
+	.footer-top {
+		justify-content: space-between;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.footer-top-left {
+		align-items: flex-start;
+	}
+	.footer-logo {
+		width: 50px;
+		height: 50px;
+	}
+	.footer-logo img {
+		width: 100%;
+	}
+	.footer-menu li {
+		text-align: left;
+	}
+	.footer-menu li a {
+		margin: 0;
+	}
+	.footer-bottom {
+		padding: 0 15px 50px 15px;
+	}
+	.footer-copyright {
+		text-align: center;
+	}
+	.footer-bottom-work {
+		align-self: flex-start;
+	}
+	.footer-bottom .footer-copyright {
+		order: 3;
+		max-width: 180px;
+	}
+	.footer-copyright span {
+		font-size: 14px;
+	}
+	.footer-social img {
+		margin: 10px 0 0 15px;
+	}
+}
+
+
+/*== ANIMATION ==*/
+
+
+@keyframes vision {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
