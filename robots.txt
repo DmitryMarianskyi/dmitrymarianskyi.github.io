@@ -8,3 +8,5 @@ Disallow: /dmitrymarianskyi.github.io/blog/blog.html
 Disallow: /dmitrymarianskyi.github.io/internetMarket/market.html
 
 Sitemap: https://dmitrymarianskyi.github.io/sitemap.xml
+
+Disallow: */sell/products/ipad
