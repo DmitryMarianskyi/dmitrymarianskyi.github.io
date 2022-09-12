@@ -18,6 +18,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind&family=Oswald&display=swap" rel="stylesheet">
     <title>Сurriculum vitae</title>
+<!-- srcset="/img/lazy.svg" -->   
+<script>
+    function check_lazy() {
+        for (var i = lazy_imgs.length - 1; i >= 0; i--) {
+            var img = lazy_imgs[i]
+            if (img.srcset == 'img/lazy.svg' && img.getBoundingClientRect().top - 100 < window.innerHeight) {
+                (function(img) {
+                    img.onload = () => {
+                        img.removeAttribute('srcset')
+                    }
+                })(img)
+                img.srcset = img.src
+            }
+        }
+    }
+    var lazy_imgs = []
+    window.addEventListener('DOMContentLoaded', () => {
+        lazy_imgs = Array.prototype.slice.call(document.querySelectorAll('img[srcset]'))
+        setTimeout(() => {
+            check_lazy()
+        }, 200)
+    })
+    window.addEventListener('scroll', () => {
+        check_lazy()
+    })
+</script>
+
 </head>
 
 <body>
@@ -147,11 +174,11 @@
         <div class="portfolioTitle">Create responsive pages with many elements</div>
         <div class="portfolioWrap">
             <div class="portfolioPic">
-                <img class="myImg" src="img/Template-min.jpg" alt="img">
+                <img class="myImg" srcset="img/lazy.svg" src="img/Template-min.jpg" alt="img">
             </div>
 
             <div class="portfolioPic">
-                <img class="myImg" src="img/Tamplate2-min.jpg" alt="img">
+                <img class="myImg" srcset="img/lazy.svg" src="img/Tamplate2-min.jpg" alt="img">
             </div>
         </div><!-- end portfolioWrap -->
 
